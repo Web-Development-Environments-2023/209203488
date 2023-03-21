@@ -2,13 +2,14 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div id="menu">
     <nav>
     <ul>
-      <button class="link">צור קשר</button>
-      <button class="link">שאלות ותשובות</button>
+      <li><a href="#contact">צור קשר</a></li>
+            <li><a href="#Q&A">שאלות ותשובות</a></li>
       <div class="dropdown">
         <button class="link">קישורים</button>
         <div class="dropdown-menu">
@@ -108,24 +109,32 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CW6bUB0C-xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eSgJ7uZTGD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
+<br/>
 </div>
-
 </section>
 <section id="like" class="section">
   <br/>
-  <br/>
+<br/>
+  <h1>
+    לחצו לייק
+  </h1>
+  <h2>
+    10000 משתמשים כבר אהבו,מה איתכם?
+  </h2>
+      <br/>
+      <br/>
   <button id="like-button">Like</button>
-  <span id="like-count">100</span>
-
+  <span id="like-count">10000</span>
   <script>
     var likeButton = document.getElementById("like-button");
     var likeCount = document.getElementById("like-count");
-    var count = 100;
+    
+    var count = 10000;
 
     likeButton.addEventListener("click", function() {
       count++;
       likeCount.innerHTML = count;
-    });
+    })
   </script>
   <br/>
   <br/>
@@ -135,51 +144,128 @@
 <section id="qrcoder" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+<img src="qrcode_52470200_31f7d70c2c98273b8e258ac43d2fdd6e (1).png" alt="qr" width="30%" height="50%">
 <br/>
 <br/>
 <br/>
 </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+<section id="Q&A" class="section">
+  <div class="wrapper">
+    <h1>
+  שאלות ותשובות
+</h1>
+<div class="qna">
+  <button class="accordion">
+    מהם ההבדלים בין web0.1, web0.2 ו-web0.3?
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </button>
+  <div class="panel">
+    <h3>
+      אתרי אינטרנט 1.0 היו דפי HTML פשוטים עם תוכן סטטי שמשתמשים יכלו רק לראות ולא לקיים איתו אינטראקציה.
+  עיקרה פלטפורמת תקשורת חד-כיוונית, Web 1.0 היה בעצם סוג של אמצעי שידור, שבו בעלי אתרים היו מפרסמים תוכן ומשתמשים צורכים אותו באופן פסיבי.
+  תוכנן עבור מחשבים שולחניים.
+  <br/>
+  Web 2.0 הביאה יישומי אינטרנט דינמיים שאפשרו למשתמשים ליצור אינטראקציה עם התוכן וליצור תוכן משלהם. 
+  Web 2.0 היא פלטפורמת תקשורת דו-כיוונית כלומר מציגה תוכן שנוצר על ידי משתמשים, מדיה חברתית ופלטפורמות העברת הודעות, שאפשרו למשתמשים ליצור ולשתף תוכן משלהם ולתקשר עם אחרים.
+  תוכנן להיות נגיש ממכשירים ניידים, שהפכו פופולריים יותר ממחשבים שולחניים.
+  <br/>
+  Web 3.0 מתמקד באינטליגנציה של מכונה וביכולת של מחשבים להבין ולעבד מידע ללא התערבות אנושית.
+  היא פלטפורמת תקשורת רב-כיוונית,שואפת ליצור רשת מבוזרת, peer-to-peer, המאפשרת תקשורת רב-כיוונית בין משתמשים, מכשירים ומערכות חכמות.
+  Web 3.0 מיועד לעתיד שבו מיליארדי מכשירים מחוברים ומערכות חכמות יפיקו ויעבדו כמויות עצומות של נתונים, שיידרשו תשתית ופרוטוקולים חדשים כדי לתמוך בקנה מידה זה של תקשורת וחישוב.
+    </h3>
+  </div>
+  
+</div>
+<div class="qna">
+  <button class="accordion">
+    מה יהיו תוצאות השאילתא "תופעות לוואי של תרופות" ב-web0.1 וב-web0.3?
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </button>
+  <div class="panel">
+    <h3>
+      אתרי אינטרנט 1.0 היו דפי HTML פשוטים עם תוכן סטטי שמשתמשים יכלו רק לראות ולא לקיים איתו אינטראקציה.
+  עיקרה פלטפורמת תקשורת חד-כיוונית, Web 1.0 היה בעצם סוג של אמצעי שידור, שבו בעלי אתרים היו מפרסמים תוכן ומשתמשים צורכים אותו באופן פסיבי.
+  תוכנן עבור מחשבים שולחניים.
+  <br/>
+  Web 2.0 הביאה יישומי אינטרנט דינמיים שאפשרו למשתמשים ליצור אינטראקציה עם התוכן וליצור תוכן משלהם. 
+  Web 2.0 היא פלטפורמת תקשורת דו-כיוונית כלומר מציגה תוכן שנוצר על ידי משתמשים, מדיה חברתית ופלטפורמות העברת הודעות, שאפשרו למשתמשים ליצור ולשתף תוכן משלהם ולתקשר עם אחרים.
+  תוכנן להיות נגיש ממכשירים ניידים, שהפכו פופולריים יותר ממחשבים שולחניים.
+  <br/>
+  Web 3.0 מתמקד באינטליגנציה של מכונה וביכולת של מחשבים להבין ולעבד מידע ללא התערבות אנושית.
+  היא פלטפורמת תקשורת רב-כיוונית,שואפת ליצור רשת מבוזרת, peer-to-peer, המאפשרת תקשורת רב-כיוונית בין משתמשים, מכשירים ומערכות חכמות.
+  Web 3.0 מיועד לעתיד שבו מיליארדי מכשירים מחוברים ומערכות חכמות יפיקו ויעבדו כמויות עצומות של נתונים, שיידרשו תשתית ופרוטוקולים חדשים כדי לתמוך בקנה מידה זה של תקשורת וחישוב.
+    </h3>
+  </div>
+  
+</div>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+//display or hide the answer 
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
 </section>
 
 <section id="contact" class="section">
 <br/>
+<div class="container">
+  <h1>
+    צור קשר
+  </h1>
+  <div class="contact-box">
+    <div class="contact-left">
+      <form>
+        <div class="input-row">
+          <div class="input-group">
+            <label>שם השולח</label>
+            <input type="text" placeholder="ישראל ישראלי">
+          </div>
+          <div class="input-group">
+            <label>מייל</label>
+            <input type="email" placeholder="israel@gmail.com">
+          </div>
+          <div class="input-group">
+            <label>אמוג'י</label>
+            <select>
+              <option value="option1">&#128516</option>
+              <option value="option2">&#128514</option>
+              <option value="option1">&#128149</option>
+              <option value="option2">&#128521</option>
+              <option value="option3">&#128531</option>
+              <option value="option1">&#128075</option>
+              <option value="option2">&#128076</option>
+              <option value="option3">&#127802</option>
+            </select>
+          </div>
+        </div>
+
+        <label>הודעה</label>
+        <textarea rows="10" placeholder="ההודעה שלך"></textarea>
+
+        <button type="submit">שלח</button>
+      </form>
+
+    </div>
+    <div class="contact-right">
+
+    </div>
+  </div>
+</div>
 <br/>
 <br/>
 <br/>
@@ -194,8 +280,6 @@ ans
 <br/>
 <br/>
 <br/>
-<br/>
-contact me
 <br/>
 <br/>
 <br/>
