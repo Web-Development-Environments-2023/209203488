@@ -41,10 +41,15 @@
     אודות
   </h1>
   <h3>
-סבתא אביבה וסבא אריה גרים באשדוד. הם אוהבים ללמוד דברים חדשים הם אוהבים ללכת להרצאות בכל מיני נושאים. סבא שלי בן 79 מקפיד ללכת כל יום לפחות 5000 צעדים ושלוש פעמים בשבוע משחק פטאנג (משחק כדור צרפתי). 
+סבתא אביבה וסבא אריה גרים באשדוד. הם אוהבים ללמוד דברים חדשים וללכת להרצאות בכל מיני נושאים. סבא שלי בן 79 מנהל סניף סנק לשעבר. הוא מקפיד ללכת כל יום לפחות 5000 צעדים ושלוש פעמים בשבוע משחק פטאנג (משחק כדור צרפתי). 
+סבא גם אוהב לצלם סרטוני וידאו של כל דבר שקורה בערך ולעשות תעלולים לסבתא שלי בעיקר. 
 <br/>
-סבתא שלי 74 אוהבת לקרוא המון בעיתון ובספרים ולצפות בפאנלים פוליטיים בטלוויזיה. 
-  </h3>
+סבתא שלי 74 רואת חשבון לשעבר בפרימור. אוהבת לקרוא המון בעיתון ובספרים ולצפות בפאנלים פוליטיים בטלוויזיה.
+<br/>
+בגלל שהם גרים מטר מהים הם מבלים בו שעות רבות כשמזג האוויר נעים , הם אוהבים לטייל בארץ ובעולם בעיקר לפגוש תרבויות. 
+<br/>
+סבתא וסבא אוהבים את החיים הטובים, הם לא נותנים לזקנה להשתלט עליהם וסבתא אפילו למדה לשחות כשיצאה לפנסיה. 
+</h3>
 </section>
 <section id="photos" class="section">
 <br/>
@@ -53,20 +58,54 @@
 <h1>
   גלריה
 </h1>
-<div class="col">
-  <div class="row">
-    <div class="card p1">      
-    </div>
-    <div class="card p2">
-    </div>
-  </div>
-  <div class="row">
-    <div class="card p3">
-    </div>
-    <div class="card p4">
-    </div>
-  </div> 
+<div class="gallery-wrap">
+  <img src="right.png" id="backbtn" width="5%">
+  
+  
+<div class="gallery">
+  <div>
+  <span><img src="p1.jpg" alt=""></span>
+  <span><img src="p2.jpg" alt=""></span>
+  <span><img src="p3.jpg" alt=""></span>
 </div>
+<div>
+  <span><img src="p6.jpg" alt=""></span>
+  <span><img src="p8.jpg" alt=""></span>
+  <span><img src="1.jpg" alt=""></span>
+</div>
+<div>
+  <span><img src="p9.jpg" alt=""></span>
+  <span><img src="p10.jpg" alt=""></span>
+  <span><img src="p11.jpg" alt=""></span>
+</div>
+</div>
+<img src="left.png" id="nextbtn" width="5%">
+
+</div>
+<script>
+  let scrollContainer =  document.querySelector(".gallery");
+  let backBtn = document.getElementById("backbtn");
+  let nextBtn = document.getElementById("nextbtn");
+
+  scrollContainer.addEventListener("wheel",(evt) =>{
+    evt.preventDefault();
+    scrollContainer.scrollLeft+=evt.deltaY;
+    scrollContainer.style.scrollBehavior="auto";
+
+  
+  });
+  nextBtn.addEventListener("click",()=>{
+    scrollContainer.style.scrollBehavior="smooth";
+    scrollContainer.scrollLeft-=900;
+  });
+
+  backBtn.addEventListener("click",()=>{
+    scrollContainer.style.scrollBehavior="smooth";
+    scrollContainer.scrollLeft+=900;
+  });
+
+
+</script>
 </section>
 
 <section id="playlist" class="section">
@@ -133,7 +172,7 @@
 <section id="qrcoder" class="section">
 <br/>
 <br/>
-<img src="qrcode_52470200_31f7d70c2c98273b8e258ac43d2fdd6e (1).png" alt="qr" width="30%" height="50%">
+<img src="qr.png" alt="qr" width="30%" height="50%">
 <br/>
 <br/>
 <br/>

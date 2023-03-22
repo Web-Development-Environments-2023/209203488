@@ -149,40 +149,50 @@ h1{
 	right: 40px;
 }
 
-.card{
-	width: 50%;
-	height: 230%;
-	display: inline-block;
-	border-radius: 10px;
-	padding: 250px 25px;
-	box-sizing: border-box;
+.gallery{
+	width: 900px;
+	display: flex;
+	overflow-x: scroll;
+	/* overflow-x: hidden; */
+
+}
+
+.gallery div{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	padding: 10px;
+	flex: none;
+
+}
+
+.gallery div img{
+	width: 100%;
+
+}
+
+.gallery div img:hover{
 	cursor: pointer;
-	margin: 10px 15px;
-	background-image: url(aviva.jpg);
-	background-size:cover;
-	width: 80%;
-	height: 50%;
-	text-align: center;
-	border-radius: .95rem;
-	box-shadow: 0 2px 5px 0 ;
+	transform: scale(1.1);
+
+}
+.gallery::-webkit-scrollbar{
+	display: none;
 }
 
-.card1{
-	background-image: url(arie.jpg);
+.gallery-wrap{
+	display: flex;
 	align-items: center;
-	display: inline-block;
-	
+	justify-content: center;
+	margin: 10% auto;
 }
 
-.card2{
-	background-image: url(aviva.jpg);
-	align-items: center;
-	display: inline-block;
-	
-}
+#backbtn, #nextbtn{
+	width: 50px;
+	cursor: pointer;
+	margin: 40px;
 
-.card:hover{
-	transform: translateY(-10px);
 }
 
 h2{
